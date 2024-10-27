@@ -1,6 +1,7 @@
 {
   "short_name": "Gaufi App",
   "name": "Gaufi App",
+  "description": "Gaufi - Your Source for Local Electricians, Plumbers, and Appliance Repair Professionals Near You",
   "icons": [
     {
       "src": "favicon.png",
