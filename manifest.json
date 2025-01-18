@@ -1,7 +1,7 @@
 {
-  "short_name": "Gaufi App",
-  "name": "Gaufi App",
-  "description": "Gaufi - Your Source for Local Electricians, Plumbers, and Appliance Repair Professionals Near You",
+  "short_name": "Gaufi",
+  "name": "Gaufi",
+  "description": "Gaufi - Find skilled professionals near you. Like Electricians, Plumbers, Appliance Technicians, Independent/ Freelancer Artists",
   "icons": [
     {
       "src": "favicon.png",

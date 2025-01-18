@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.gaufi.twa",
-        "sha256_cert_fingerprints": ["BE:AE:F5:BF:5E:10:B9:2C:6E:31:B2:25:C9:93:34:31:6C:BE:B9:8F:2F:EC:01:01:33:09:9D:32:91:10:55:29"]
-      }
-    }]
