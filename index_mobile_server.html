@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Gaufi - Find skilled professionals near you. Like Electricians, Plumbers, Appliance Technicians, Independent/ Freelancer Artists" />
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;" script-src='unsafe-inline'> -->
+  <!-- <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline'> -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 
+    https://code.jquery.com 
+    https://cdn.jsdelivr.net;
+  style-src 'self' 'unsafe-inline' 
+    https://cdnjs.cloudflare.com;
+  img-src 'self' data: blob:
+    https://gaufiawsbucket.s3.ap-south-1.amazonaws.com 
+    font-src 'self' 
+    https://cdnjs.cloudflare.com;
+  connect-src 'self' 
+    https://api.phonepe.com
+    https://api.postalpincode.in
+    https://server-2z7t.onrender.com;
+  frame-src 'self' 
+    https://*.phonepe.com;
+">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+  <!-- CSS only -->
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/font-awesome.min.css"> -->
+
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Gaufi - Find skilled professionals near you. Like Electricians, Plumbers, Appliance Technicians, Independent/ Freelancer Artists</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="cordova.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <!-- <script src="/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- <script src="/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+  <!-- <script>
+   // window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      // if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      //   document.getElementById("header").style.fontSize = "10px";
+      //   document.getElementById("header").style.height = "30px";
+      // } else {
+      //   document.getElementById("header").style.height = "60px";
+      // }
+    }
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      if(document.getElementsByClassName("navigation-menu expanded")?.length){
+        return;
+      }
+
+      //hide header on Modal screen
+      if(document.getElementsByClassName("modal fade show").length){
+          document.getElementById("header").classList.add("hidden");
+          return;
+      }
+      
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").classList.remove("hidden");
+      } else {
+        document.getElementById("header").classList.add("hidden");
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script> -->
+
+  <script>
+    // Define the throttle function
+    function throttle(func, limit) {
+      let lastFunc;
+      let lastRan;
+      return function () {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        } else {
+          clearTimeout(lastFunc);
+          lastFunc = setTimeout(function () {
+            if ((Date.now() - lastRan) >= limit) {
+              func.apply(context, args);
+              lastRan = Date.now();
+            }
+          }, limit - (Date.now() - lastRan));
+        }
+      };
+    }
+
+    // Initialize the scroll position variable
+    var prevScrollpos = window.pageYOffset;
+
+    // Define the scroll event handler
+    const handleScroll = () => {
+      if (document.getElementsByClassName("navigation-menu expanded")?.length) {
+        return;
+      }
+
+      //hide header on Modal screen
+      if(document.getElementsByClassName("modal fade show").length){
+            document.getElementById("header").classList.add("hidden");
+            return;
+      }
+
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").classList.remove("hidden");
+      } else {
+        document.getElementById("header").classList.add("hidden");
+      }
+      prevScrollpos = currentScrollPos;
+    };
+
+    // Throttle the scroll event handler
+    const throttledHandleScroll = throttle(handleScroll, 200); // Adjust the throttle limit as needed
+
+    // Attach the throttled scroll event handler
+    //window.onscroll = throttledHandleScroll;
+  </script>
+ 
+
+</body>
+
+</html>
