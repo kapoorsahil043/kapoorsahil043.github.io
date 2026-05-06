@@ -1,0 +1,96 @@
+<svg width="1024" height="1024" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <filter id="pinShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="100" height="100" rx="22" fill="url(#bgGrad)"/>
+
+  <!-- Subtle top-left glow -->
+  <circle cx="10" cy="10" r="30" fill="rgba(255,255,255,0.08)"/>
+  <!-- Subtle bottom-right depth -->
+  <circle cx="92" cy="92" r="24" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- Location pin shape -->
+  <path d="M50 6 C33 6 20 19 20 34 C20 53 50 80 50 80 C50 80 80 53 80 34 C80 19 67 6 50 6Z"
+        fill="white" opacity="0.96" filter="url(#pinShadow)"/>
+
+  <!-- ===================== -->
+  <!-- 4-person handshake    -->
+  <!-- ===================== -->
+  <g transform="translate(50, 36)">
+
+    <!-- TOP-LEFT person (circle + face) -->
+    <circle cx="-13" cy="-17" r="5.5" fill="none" stroke="url(#iconGrad)" stroke-width="2.3"/>
+    <circle cx="-14.2" cy="-18.2" r="0.8" fill="url(#iconGrad)"/>
+    <circle cx="-11.8" cy="-18.2" r="0.8" fill="url(#iconGrad)"/>
+    <path d="M-14 -16 Q-13 -15 -12 -16" fill="none" stroke="url(#iconGrad)" stroke-width="0.8" stroke-linecap="round"/>
+
+    <!-- TOP-RIGHT person -->
+    <circle cx="13" cy="-17" r="5.5" fill="none" stroke="url(#iconGrad)" stroke-width="2.3"/>
+    <circle cx="11.8" cy="-18.2" r="0.8" fill="url(#iconGrad)"/>
+    <circle cx="14.2" cy="-18.2" r="0.8" fill="url(#iconGrad)"/>
+    <path d="M12 -16 Q13 -15 14 -16" fill="none" stroke="url(#iconGrad)" stroke-width="0.8" stroke-linecap="round"/>
+
+    <!-- BOTTOM-LEFT person -->
+    <circle cx="-17" cy="4" r="5.5" fill="none" stroke="url(#iconGrad)" stroke-width="2.3"/>
+    <circle cx="-18.2" cy="2.8" r="0.8" fill="url(#iconGrad)"/>
+    <circle cx="-15.8" cy="2.8" r="0.8" fill="url(#iconGrad)"/>
+    <path d="M-18 5 Q-17 6 -16 5" fill="none" stroke="url(#iconGrad)" stroke-width="0.8" stroke-linecap="round"/>
+
+    <!-- BOTTOM-RIGHT person -->
+    <circle cx="17" cy="4" r="5.5" fill="none" stroke="url(#iconGrad)" stroke-width="2.3"/>
+    <circle cx="15.8" cy="2.8" r="0.8" fill="url(#iconGrad)"/>
+    <circle cx="18.2" cy="2.8" r="0.8" fill="url(#iconGrad)"/>
+    <path d="M16 5 Q17 6 18 5" fill="none" stroke="url(#iconGrad)" stroke-width="0.8" stroke-linecap="round"/>
+
+    <!-- Arms from top-left to handshake -->
+    <line x1="-9" y1="-13" x2="-5" y2="-4" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+    <!-- Arms from top-right to handshake -->
+    <line x1="9" y1="-13" x2="5" y2="-4" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+    <!-- Arms from bottom-left to handshake -->
+    <line x1="-12" y1="1" x2="-5" y2="-2" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+    <!-- Arms from bottom-right to handshake -->
+    <line x1="12" y1="1" x2="5" y2="-2" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+
+    <!-- Handshake in center -->
+    <!-- Left hand -->
+    <path d="M-6,-1 C-4,-4 0,-4 2,-2" fill="none" stroke="url(#iconGrad)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Right hand -->
+    <path d="M6,-1 C4,-4 0,-4 -2,-2" fill="none" stroke="url(#iconGrad)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Fingers interlock -->
+    <path d="M-3,0 C-1,2 1,2 3,0" fill="none" stroke="url(#iconGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  </g>
+
+  <!-- Pin tail shadow -->
+  <ellipse cx="50" cy="82" rx="5" ry="2" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Gaufi text -->
+  <text
+    x="50"
+    y="94"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="11.5"
+    font-weight="700"
+    fill="white"
+    text-anchor="middle"
+    opacity="0.96"
+    filter="url(#textShadow)"
+    letter-spacing="2"
+  >Gaufi</text>
+
+</svg>

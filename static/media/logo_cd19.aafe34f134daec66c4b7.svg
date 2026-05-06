@@ -1,0 +1,96 @@
+<svg width="1024" height="1024" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b4d"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="iconGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="pinShadow">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2.5" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+    <filter id="starGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#f59e0b" flood-opacity="0.8"/>
+    </filter>
+    <filter id="checkGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#10b981" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+ 
+  <!-- ============================ -->
+  <!-- ICON 2: CHECKMARK in center  -->
+  <!-- ============================ -->
+  
+  <rect x="115" width="100" height="100" rx="22" fill="url(#bgGrad2)"/>
+  <circle cx="125" cy="10" r="30" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="207" cy="92" r="24" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- Pin -->
+  <path d="M165 6 C148 6 135 19 135 34 C135 53 165 80 165 80 C165 80 195 53 195 34 C195 19 182 6 165 6Z"
+        fill="white" opacity="0.96" filter="url(#pinShadow)"/>
+
+  <!-- TOP-LEFT user -->
+  <g transform="translate(151,17)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad2)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad2)"/>
+  </g>
+  <!-- TOP-RIGHT user -->
+  <g transform="translate(179,17)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad2)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad2)"/>
+  </g>
+  <!-- BOTTOM-LEFT user -->
+  <g transform="translate(147,38)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad2)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad2)"/>
+  </g>
+  <!-- BOTTOM-RIGHT user -->
+  <g transform="translate(183,38)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad2)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad2)"/>
+  </g>
+
+  <!-- Connector arms -->
+  <line x1="154" y1="26" x2="161" y2="31" stroke="url(#iconGrad2)" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="176" y1="26" x2="169" y2="31" stroke="url(#iconGrad2)" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="150" y1="40" x2="160" y2="35" stroke="url(#iconGrad2)" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="180" y1="40" x2="170" y2="35" stroke="url(#iconGrad2)" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Circle background for checkmark -->
+  <circle cx="165" cy="34" r="8" fill="#10b981" filter="url(#checkGlow)"/>
+
+  <!-- CHECKMARK at center (165, 34) -->
+  <polyline
+    points="160,34 163.5,37.5 170,30"
+    fill="none"
+    stroke="white"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Pin tail shadow -->
+  <ellipse cx="165" cy="82" rx="5" ry="2" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Gaufi text -->
+  <text x="165" y="94" font-family="Georgia,serif" font-size="11.5" font-weight="700"
+        fill="white" text-anchor="middle" opacity="0.96" filter="url(#textShadow)" letter-spacing="2">Gaufi</text>
+
+  <!-- Small label -->
+  <text x="165" y="102" font-family="sans-serif" font-size="5" fill="#9ca3af" text-anchor="middle">✅ Checkmark version</text>
+
+</svg>

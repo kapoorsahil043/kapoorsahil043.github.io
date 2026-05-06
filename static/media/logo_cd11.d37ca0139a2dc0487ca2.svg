@@ -1,0 +1,99 @@
+<svg width="1024" height="1024" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <filter id="pinShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="100" height="100" rx="22" fill="url(#bgGrad)"/>
+
+  <!-- Subtle top-left glow -->
+  <circle cx="10" cy="10" r="30" fill="rgba(255,255,255,0.08)"/>
+  <!-- Subtle bottom-right depth -->
+  <circle cx="92" cy="92" r="24" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- Location pin shape -->
+  <path d="M50 6 C33 6 20 19 20 34 C20 53 50 80 50 80 C50 80 80 53 80 34 C80 19 67 6 50 6Z"
+        fill="white" opacity="0.96" filter="url(#pinShadow)"/>
+
+  <!-- ============================== -->
+  <!-- 4 user silhouettes + handshake -->
+  <!-- ============================== -->
+  <g transform="translate(50, 36)">
+
+    <!-- TOP-LEFT user silhouette -->
+    <g transform="translate(-14, -19)">
+      <!-- Head -->
+      <circle cx="0" cy="-3" r="3.2" fill="url(#iconGrad)"/>
+      <!-- Body/shoulders -->
+      <path d="M-4,2 C-4,-1 4,-1 4,2 L3,6 L-3,6 Z" fill="url(#iconGrad)"/>
+    </g>
+
+    <!-- TOP-RIGHT user silhouette -->
+    <g transform="translate(14, -19)">
+      <circle cx="0" cy="-3" r="3.2" fill="url(#iconGrad)"/>
+      <path d="M-4,2 C-4,-1 4,-1 4,2 L3,6 L-3,6 Z" fill="url(#iconGrad)"/>
+    </g>
+
+    <!-- BOTTOM-LEFT user silhouette -->
+    <g transform="translate(-17, 2)">
+      <circle cx="0" cy="-3" r="3.2" fill="url(#iconGrad)"/>
+      <path d="M-4,2 C-4,-1 4,-1 4,2 L3,6 L-3,6 Z" fill="url(#iconGrad)"/>
+    </g>
+
+    <!-- BOTTOM-RIGHT user silhouette -->
+    <g transform="translate(17, 2)">
+      <circle cx="0" cy="-3" r="3.2" fill="url(#iconGrad)"/>
+      <path d="M-4,2 C-4,-1 4,-1 4,2 L3,6 L-3,6 Z" fill="url(#iconGrad)"/>
+    </g>
+
+    <!-- Connector arms -->
+    <!-- Top-left body bottom to center -->
+    <line x1="-12" y1="-10" x2="-5" y2="-4" stroke="url(#iconGrad)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Top-right body bottom to center -->
+    <line x1="12" y1="-10" x2="5" y2="-4" stroke="url(#iconGrad)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Bottom-left body to center -->
+    <line x1="-13" y1="4" x2="-5" y2="-2" stroke="url(#iconGrad)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Bottom-right body to center -->
+    <line x1="13" y1="4" x2="5" y2="-2" stroke="url(#iconGrad)" stroke-width="2.4" stroke-linecap="round"/>
+
+    <!-- Central handshake -->
+    <path d="M-6,-0.5 C-3,-5 3,-5 6,-0.5"
+          fill="none" stroke="url(#iconGrad)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M-5,1.5 C-2,4.5 2,4.5 5,1.5"
+          fill="none" stroke="url(#iconGrad)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M-2.5,-1.5 C-0.5,0.5 0.5,0.5 2.5,-1.5"
+          fill="none" stroke="url(#iconGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  </g>
+
+  <!-- Pin tail shadow -->
+  <ellipse cx="50" cy="82" rx="5" ry="2" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Gaufi text -->
+  <text
+    x="50"
+    y="94"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="11.5"
+    font-weight="700"
+    fill="white"
+    text-anchor="middle"
+    opacity="0.96"
+    filter="url(#textShadow)"
+    letter-spacing="2"
+  >Gaufi</text>
+
+</svg>

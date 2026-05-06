@@ -1,0 +1,113 @@
+<svg width="1024" height="1024" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <filter id="pinShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="100" height="100" rx="22" fill="url(#bgGrad)"/>
+  <circle cx="10" cy="10" r="30" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="92" cy="92" r="24" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- Location pin -->
+  <path d="M50 6 C33 6 20 19 20 34 C20 53 50 80 50 80 C50 80 80 53 80 34 C80 19 67 6 50 6Z"
+        fill="white" opacity="0.96" filter="url(#pinShadow)"/>
+
+  <!-- TOP-LEFT user -->
+  <g transform="translate(36, 17)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad)"/>
+  </g>
+
+  <!-- TOP-RIGHT user -->
+  <g transform="translate(64, 17)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad)"/>
+  </g>
+
+  <!-- BOTTOM-LEFT user -->
+  <g transform="translate(32, 38)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad)"/>
+  </g>
+
+  <!-- BOTTOM-RIGHT user -->
+  <g transform="translate(68, 38)">
+    <circle cx="0" cy="0" r="3.2" fill="url(#iconGrad)"/>
+    <ellipse cx="0" cy="6.5" rx="4.2" ry="3" fill="url(#iconGrad)"/>
+  </g>
+
+  <!-- Connector arms -->
+  <line x1="39" y1="26" x2="45" y2="32" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+  <line x1="61" y1="26" x2="55" y2="32" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+  <line x1="35" y1="40" x2="45" y2="36" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+  <line x1="65" y1="40" x2="55" y2="36" stroke="url(#iconGrad)" stroke-width="2.3" stroke-linecap="round"/>
+
+  <!-- ================================ -->
+  <!-- CLEAR HANDSHAKE at center (50,34)-->
+  <!-- Two forearms + clasped hands     -->
+  <!-- ================================ -->
+  <g transform="translate(50, 34)">
+
+    <!-- Left forearm coming from left -->
+    <path d="M-10,1 L-3,1"
+          stroke="url(#iconGrad)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Right forearm coming from right -->
+    <path d="M10,1 L3,1"
+          stroke="url(#iconGrad)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Left thumb up -->
+    <path d="M-6,-2 C-6,-4.5 -3,-5 -2,-3"
+          stroke="url(#iconGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Right thumb up -->
+    <path d="M6,-2 C6,-4.5 3,-5 2,-3"
+          stroke="url(#iconGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Clasped fingers — left hand fingers wrapping -->
+    <path d="M-3,-2 C-3,0 3,0 3,-2"
+          stroke="url(#iconGrad)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Knuckle bumps on top -->
+    <path d="M-2,-3 C-1,-4.5 1,-4.5 2,-3"
+          stroke="url(#iconGrad)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+    <!-- Wrist cuff lines -->
+    <line x1="-10" y1="-1" x2="-10" y2="3"
+          stroke="url(#iconGrad)" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="10" y1="-1" x2="10" y2="3"
+          stroke="url(#iconGrad)" stroke-width="1.5" stroke-linecap="round"/>
+
+  </g>
+
+  <!-- Pin tail shadow -->
+  <ellipse cx="50" cy="82" rx="5" ry="2" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Gaufi text -->
+  <text
+    x="50"
+    y="94"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="11.5"
+    font-weight="700"
+    fill="white"
+    text-anchor="middle"
+    opacity="0.96"
+    filter="url(#textShadow)"
+    letter-spacing="2"
+  >Gaufi</text>
+
+</svg>
